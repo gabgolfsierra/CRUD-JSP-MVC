@@ -1,7 +1,7 @@
 package com.crud.domain;
 
 public class Aluno {
-    private String id;
+    private int id;
     private String nome;
     private String sobrenome;
     private int matricula;
@@ -10,18 +10,18 @@ public class Aluno {
 
     }
 
-    public Aluno(String id, String nome, String sobrenome, int matricula) {
+    public Aluno(int id, String nome, String sobrenome, int matricula) {
         this.id = id;
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.matricula = matricula;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
