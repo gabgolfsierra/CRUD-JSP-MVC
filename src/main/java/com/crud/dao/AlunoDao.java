@@ -28,7 +28,7 @@ public class AlunoDao {
 
         try{
             Connection con = getConnection();
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM Aluno");
+            PreparedStatement ps = con.prepareStatement("SELECT * FROM crud.aluno");
             ResultSet rs = ps.executeQuery();
 
             while(rs.next()){
